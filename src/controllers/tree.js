@@ -8,7 +8,7 @@ class TreeController {
     if (!treeData) {
       res.status(httpStatus.BAD_REQUEST).json({ error: "Missing tree data" });
       return;
-    }
+    } 
 
     const { title, owner, links, social, design } = treeData;
 
