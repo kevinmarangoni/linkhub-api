@@ -37,6 +37,12 @@ const treeSchema = mongoose.Schema({
   id: {
     type: String,
     required: true,
+    trim: true,
+  },
+  slug: {
+    type: String,
+    required: true,
+    trim: true,
   },
   title: {
     type: String,
