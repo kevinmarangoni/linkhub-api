@@ -1,4 +1,3 @@
-
 const LinkModel = require("../model/link.schema.js")
 
 class LinkService {
@@ -28,26 +27,6 @@ class LinkService {
     async getLinkByShort(short){
         return await LinkModel.findOne({short: short})
     }
-
-    // async updateLink(){
-
-    // }
-
-    // async deleteLink(){
-
-    // }
-
-    // async getAllLinks(){
-
-    // }
-
-    // async getAllShorts(){
-
-    // }
-
-    // async getShortById(){
-
-    // }
 }
 
 module.exports = new LinkService()

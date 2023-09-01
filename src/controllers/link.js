@@ -2,8 +2,7 @@ const LinkService = require("../services/links")
 const httpStatus = require("http-status");
 
 class LinkController {
-
-
+    
     async createLink(req, res){
         let link = req.body.link
 
