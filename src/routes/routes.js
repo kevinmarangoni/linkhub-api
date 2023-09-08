@@ -26,7 +26,7 @@ router.get('/tree/owner/:owner', Tree.getTreesByOwner);
 router.get('/imagekit/auth', ImageKit.getImagekitAuthParams);
 
 // Usuários
-router.get('/user/:userId', User.getUserById);
+router.get('/user/id/:userId', User.getUserById);
 router.get('/user/email/:email', User.getUserByEmail);
 router.get('/user/active', User.getAllActiveUsers);
 router.get('/user/inactive', User.getInactiveUsers);
