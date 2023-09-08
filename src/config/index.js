@@ -6,6 +6,11 @@ const globalConfigs = {
     },
     jwt:{
         secret: process.env.JWT_SECRET,
+    },
+    imagekit:{
+        publicKey: process.env.IMAGEKIT_PUBLIC_KEY,
+        privateKey: process.env.IMAGEKIT_PRIVATE_KEY,
+        endpointURL: process.env.IMAGEKIT_URL,
     }
 
 }

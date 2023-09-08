@@ -16,7 +16,6 @@ app.use(express.urlencoded({ extended: true}))
 app.use(mongoSanitize())
 app.use(cors())
 app.options('*', cors())
-
 app.use('/api/v1', routes);
 
 module.exports = app;
