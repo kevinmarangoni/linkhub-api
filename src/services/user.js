@@ -83,7 +83,7 @@ class UserService {
     }
 
     async getUserById(id) {
-        return await UserModel.findById(id);
+        return await UserModel.findOne({id: id});
     }
 
     async getUserByEmail(email){
